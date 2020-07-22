@@ -1,9 +1,3 @@
-
-{{!--
-Only show comments to signed in members (only members can comment)
-for more options:  https://app.cove.chat/install/
---}}
-
 {{#if @labs.members}}
   <h2><span id="cove-count"></span> Comments</h2>
   {{#if @member}}
@@ -21,12 +15,11 @@ for more options:  https://app.cove.chat/install/
   {{/if}}
 
   <script>
-  const Cove = {
-    publication: "e390e63588a52b3a2a45e6bf9e8a34e4",
-    contentId: "{{id}}",
-    memberId: "{{@member.uuid}}",
-    memberEmail: "{{@member.email}}"
-  }
+    const Cove = {
+      publication: "e390e63588a52b3a2a45e6bf9e8a34e4",
+      contentId: "{{id}}",
+      memberId: "{{@member.uuid}}",
+      memberEmail: "{{@member.email}}"
+    };
   </script>
-  
 {{/if}}
