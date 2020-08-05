@@ -3493,6 +3493,7 @@ form[data-members-form].error .message-error {
 }
 
 .post-visibility {
+    text-transform: capitalize;
     display: inline-block;
     margin: 0 8px 1px 0;
     padding: 1px 5px;
@@ -3505,7 +3506,7 @@ form[data-members-form].error .message-error {
 
 .post-visibility-members,
 .post-visibility-paid {
-    display: none;
+    //display: none;
 }
 
 .post-upgrade-cta {
