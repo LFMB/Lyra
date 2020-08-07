@@ -4,8 +4,9 @@
     <div id="cove"></div>
     <p>Signed in as {{@member.email}} · <a href="javascript:" data-members-signout>Sign out</a></p>
   {{else}}
-    <p>Sign in or become a {{@site.title}} member to read and leave comments.<br>
-    Just enter your email below to get a log in link.</p>
+    <p>Active {{@site.title}} members with emails attached to their membership can read and leave comments.</p>
+    <p>Members: To log in please enter your email below and then check your mail for a link.</p>
+    <p>Please note that we are in the process of moving our membership capabilities online and the best way for you to aid us in that task is by subscribing to our free e-news letter</p>
     <form data-members-form="signin" id="cove-login">
       <input class="cove-input" data-members-email type="email" required="true" placeholder="your@email.com" />
       <button type="submit" class="cove-button">Send a log in link</button>
