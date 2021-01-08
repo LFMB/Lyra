@@ -109,6 +109,9 @@ into the {body} of the default.hbs template --}}
                     <div class="post-content">
                         {{content}}
                     </div>
+                    <div class="member-comments">
+                        {{> comments}}
+                    </div>
                 </section>
 
             {{else}}
@@ -129,9 +132,6 @@ into the {body} of the default.hbs template --}}
                             <p><small>Already have a membership? <a href="/signin/">Sign in</a></small></p>
                         </div>
                     </aside>
-                    <div class="">
-                        {{> comments}}
-                    </div>
                 </section>
 
             {{/if}}
