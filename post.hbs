@@ -129,16 +129,17 @@ into the {body} of the default.hbs template --}}
                             <p><small>Already have a membership? <a href="/signin/">Sign in</a></small></p>
                         </div>
                     </aside>
+                    <div class="">
+                        {{> comments}}
+                    </div>
                 </section>
 
             {{/if}}
-
-            {{!--
+            {{!-- 
             <section class="post-full-comments">
-                If you want to embed comments, this is a good place to do it!
+                {{> comments}}
             </section>
             --}}
-
         </article>
 
     </div>
