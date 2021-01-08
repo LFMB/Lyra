@@ -4,7 +4,9 @@
     <div id="cove"></div>
     <p>Signed in as {{@member.email}} · <a href="javascript:" data-members-signout>Sign out</a></p>
   {{else}}
-    <p>Sign in or become a {{@site.title}} member to read and leave comments.<br>
+    {{!-- 
+    <p>Sign in or become a {{@site.title}} member to read and leave comments.
+    <br>
     Just enter your email below to get a log in link.</p>
     <form data-members-form="signin" id="cove-login">
       <input class="cove-input" data-members-email type="email" required="true" placeholder="your@email.com" />
@@ -12,6 +14,7 @@
       <span class="signin-success" style="display:none">Great! Please check your inbox (or spam folder) for a log in link.</span>
       <span class="signin-error" style="display:none">Something didn't work. Please try again.</span>
     </form>
+    --}}
   {{/if}}
 
   <script>
